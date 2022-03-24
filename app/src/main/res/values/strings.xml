@@ -2,4 +2,12 @@
     <string name="app_name">Navigation</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_apellido_paterno">Apellido Paterno</string>
+    <string name="hint_apellido_materno">Apellido Materno</string>
+    <string name="hint_nickname">Nombre de Usuario</string>
+    <string name="hint_email">Email</string>
+    <string name="button_send">Enviar Datos</string>
+    <string name="form_required_field">Campo requerido</string>
+
 </resources>

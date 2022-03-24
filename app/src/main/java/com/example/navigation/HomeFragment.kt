@@ -5,10 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import com.example.navigation.databinding.ActivityMainBinding
 import com.example.navigation.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -24,7 +21,7 @@ class HomeFragment : Fragment() {
         val navController = findNavController()
         binding.buttonHomeToInside.setOnClickListener{
             //navController.navigate(R.id.action_homeFragment_to_insideHome)
-            val testArgument = "desde el home"
+            val testArgument = "Click desde el home"
             val directions = HomeFragmentDirections.actionHomeFragmentToInsideHome(testArgument)
             //NavHostFragment.findNavController(this).navigate(directions)
             navController.navigate(directions)

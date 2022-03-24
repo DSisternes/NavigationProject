@@ -9,7 +9,7 @@
         android:id="@+id/homeFragment"
         android:name="com.example.navigation.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_insideHome"
             app:destination="@id/insideHome" />
@@ -18,17 +18,25 @@
         android:id="@+id/insideHome"
         android:name="com.example.navigation.InsideHome"
         android:label="fragment_inside_home"
-        tools:layout="@layout/fragment_inside_home" >
+        tools:layout="@layout/fragment_inside_home">
         <argument
             android:name="argumentoPasado"
-            app:argType="string"
-            android:defaultValue="empty" />
+            android:defaultValue="empty"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_insideHome_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.navigation.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile">
+        <argument
+            android:name="argumentoPasado2"
+            android:defaultValue="empty"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.navigation.SettingsFragment"

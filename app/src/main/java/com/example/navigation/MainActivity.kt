@@ -2,14 +2,9 @@ package com.example.navigation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.navigation.databinding.ActivityMainBinding
-import com.example.navigation.databinding.FragmentInsideHomeBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
-import java.security.AccessController
 
 class MainActivity : AppCompatActivity() {
     //private lateinit var navController: NavController
